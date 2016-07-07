@@ -1,0 +1,12 @@
+$(function() {
+document.getElementById("first").onkeyup = function() 
+{
+myFunction();
+}
+function myFunction() {
+var f = document.getElementById("first").value;
+document.getElementById("second").value.split("") = f;
+     
+}
+}
+);
