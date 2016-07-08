@@ -2,11 +2,20 @@ $(function() {
 document.getElementById("first").onkeyup = function() 
 {
 myFunction();
+splitfunc();
 }
+});
 function myFunction() {
-var f = document.getElementById("first").value;
-document.getElementById("second").value.split("") = f;
+ f = document.getElementById("first").value;
+document.getElementById("second").value = f;
+}
+
+function splitfunc() {
      
+   a = f.split(" ");
+    document.getElementById("second").innerHTML = a;
 }
-}
-);
+   
+    
+
+
