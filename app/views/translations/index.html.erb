@@ -3,6 +3,8 @@
 <table>
   <thead>
     <tr>
+      <th>Punjabi</th>
+      <th>Urdu</th>
       <th></th>
       <th></th>
       <th></th>
@@ -12,6 +14,8 @@
   <tbody>
     <% @translations.each do |translation| %>
       <tr>
+        <td><%= translation.punjabi %></td>
+        <td><%= translation.urdu %></td>
         <td><%= link_to 'Show', translation %></td>
         <td><%= link_to 'Edit', edit_translation_path(translation) %></td>
         <td><%= link_to 'Destroy', translation, method: :delete, data: { confirm: 'Are you sure?' } %></td>

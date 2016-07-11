@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160708070625) do
+ActiveRecord::Schema.define(version: 20160708084143) do
+
+  create_table "translations", force: true do |t|
+    t.text     "punjabi"
+    t.text     "urdu"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "wordtranslations", force: true do |t|
     t.text     "punjabi"

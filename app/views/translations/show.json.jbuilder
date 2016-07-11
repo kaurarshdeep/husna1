@@ -1,1 +1,1 @@
-json.extract! @translation, :id, :created_at, :updated_at
+json.extract! @translation, :id, :punjabi, :urdu, :created_at, :updated_at
