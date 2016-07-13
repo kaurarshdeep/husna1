@@ -14,9 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$( "input" )
-  .keyup(function() {
-    var value = $( this ).val();
-    $( "p" ).text( value );
-  })
-  .keyup();
+
