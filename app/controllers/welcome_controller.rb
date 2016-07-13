@@ -5,6 +5,13 @@ skip_before_action :verify_authenticity_token
   end
 
   def translate
-	@pun = params[:urduAaala].split(/\W+/).uniq.inspect
+	@punjabiWordsList = params[:urduAaala].split(/\W+/).uniq.inspect
+	@noOfWords = @punjabiWordsList.length
+	@urduWordsList = []
+	for i in 0..@noOfWords
+		@pun = Translation.where(punjabi: @urduWordsList[i]).first.inspect
+   		end
+		
+		
   end
 end
