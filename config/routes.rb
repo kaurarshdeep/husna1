@@ -1,4 +1,5 @@
 Husna::Application.routes.draw do
+  devise_for :users
   resources :translations
 
   root "welcome#index"
