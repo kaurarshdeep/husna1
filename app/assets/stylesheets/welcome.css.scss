@@ -16,7 +16,6 @@ body, html{
 
 header { 
 	height: 50px;
-	line-height:50px;
 	background: rgba(241, 196, 15,1.0);
         text-align:center;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
@@ -30,6 +29,7 @@ header h1 {
 	font-weight:400;
  	font-size:36px;
 	text-shadow:2px 2px 3px rgba(255,255,255,0.5);	
+        margin-top:15px;
 }
  form { height:100%;}
 
@@ -67,4 +67,19 @@ header h1 {
 .submit:hover {
    background:#333;
    color:#fff;
+}
+a{
+   float:right;
+   font-size:30px;
+   height:30px;
+   width:150px;
+   margin:auto;
+   margin-top:-10px;
+}
+.signupandlogin
+{
+display:inline-block;
+float:right;
+position:absolute;
+
 }

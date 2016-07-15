@@ -29653,3 +29653,3666 @@ Processing by WelcomeController#translate as HTML
   Rendered welcome/translate.html.erb within layouts/application (0.3ms)
   [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 ORDER BY "users"."id" ASC LIMIT 1[0m
 Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 1.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:27:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 427ms (Views: 414.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 13:27:13 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:32:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (55.5ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration_path' for #<#<Class:0x0055a83d879430>:0x0055a83f7429e8>
+Did you mean?  new_translation_path):
+    3: 		<h1> Husna </h1>
+    4: 	    </header>	    
+    5:        	    <section class="container">
+    6:                 <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+    7:                 <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>     
+    8:                 <form action="/translate" method="get">
+    9: 			<div class="punjabi-area area"> 
+  app/views/welcome/index.html.erb:6:in `_app_views_welcome_index_html_erb__741165994034479163_47090553718020'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:34:10 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/translations/" for 127.0.0.1 at 2016-07-14 13:34:34 +0530
+Processing by TranslationsController#index as HTML
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT "translations".* FROM "translations"
+  Rendered translations/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 49ms (Views: 32.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/translations/1/edit" for 127.0.0.1 at 2016-07-14 13:34:38 +0530
+Processing by TranslationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered translations/_form.html.erb (30.4ms)
+  Rendered translations/edit.html.erb within layouts/application (49.4ms)
+Completed 200 OK in 124ms (Views: 115.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-14 13:34:41 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (1.7ms)
+  Rendered translations/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:42:21 +0530
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `authenticate_user!' for #<WelcomeController:0x0055a83fdd6c50>
+Did you mean?  authenticate_with_http_digest):
+  activesupport (4.2.7) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:164:in `block in halting'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `each'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:504:in `call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.7) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.7) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.7) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.7) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.7) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.7) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:46:52 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0055a84024d838>:0x0055a84023edd8>):
+    15:   <p class="alert alert-danger"><%= alert %></p>
+    16: <% end %>
+    17: <p class="navbar-text pull-right">
+    18: <% if user_signed_in? %>
+    19:   Logged in as <strong><%= current_user.email %></strong>.
+    20:   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    21:   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___3457771712271395969_47090559462940'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:47:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 59ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:49:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:49:52 +0530
+
+NoMethodError (undefined method `devise' for #<Class:0x00562eb8c65768>):
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:50:41 +0530
+
+NoMethodError (undefined method `devise' for Member(Table doesn't exist):Class):
+  app/models/member.rb:4:in `<class:Member>'
+  app/models/member.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20160714081947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (121.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (99.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWordtranslations (20160708070625)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/arsh/husna1/db/migrate/20160708070625_create_wordtranslations.rb:7)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "wordtranslations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "punjabi" text, "urdu" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160708070625"]]
+  [1m[35m (130.5ms)[0m  commit transaction
+Migrating to CreateTranslations (20160708084143)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/arsh/husna1/db/migrate/20160708084143_create_translations.rb:7)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "translations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "punjabi" text, "urdu" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160708084143"]]
+  [1m[35m (154.0ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20160714081947)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160714081947"]]
+  [1m[36m (151.8ms)[0m  [1mcommit transaction[0m
+Migrating to DeviseCreateMembers (20160714082038)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160714082038"]]
+  [1m[35m (129.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:51:08 +0530
+
+NoMethodError (undefined method `devise' for Member(Table doesn't exist):Class):
+  app/models/member.rb:4:in `<class:Member>'
+  app/models/member.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:51:10 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.7) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.7) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:51:15 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.7) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.7) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:51:20 +0530
+
+NoMethodError (undefined method `devise' for Member(Table doesn't exist):Class):
+  app/models/member.rb:4:in `<class:Member>'
+  app/models/member.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (128.0ms)[0m  [1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (99.6ms)[0m  [1mCREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+
+  [1m[36m (110.8ms)[0m  [1mCREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")[0m
+  [1m[35m (110.1ms)[0m  CREATE TABLE "translations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "punjabi" text, "urdu" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (143.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (132.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (133.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (143.6ms)[0m  [1mCREATE TABLE "wordtranslations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "punjabi" text, "urdu" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (187.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (143.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (143.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160714082038')[0m
+  [1m[35m (145.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160714081947')
+  [1m[36m (124.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160708070625')[0m
+  [1m[35m (111.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160708084143')
+  [1m[36m (96.3ms)[0m  [1mCREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (99.4ms)[0m  [1mCREATE UNIQUE INDEX "index_members_on_email" ON "members" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+
+  [1m[36m (110.6ms)[0m  [1mCREATE UNIQUE INDEX "index_members_on_reset_password_token" ON "members" ("reset_password_token")[0m
+  [1m[35m (110.7ms)[0m  CREATE TABLE "translations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "punjabi" text, "urdu" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (121.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (122.0ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (131.7ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36m (121.6ms)[0m  [1mCREATE TABLE "wordtranslations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "punjabi" text, "urdu" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (132.8ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (132.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (144.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160714082038')[0m
+  [1m[35m (144.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160714081947')
+  [1m[36m (144.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20160708070625')[0m
+  [1m[35m (144.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160708084143')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:52:00 +0530
+
+NoMethodError (undefined method `devise' for #<Class:0x00562eb87b37d8>):
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:54:32 +0530
+
+NoMethodError (undefined method `devise' for #<Class:0x00562eb8c7e240>):
+  app/models/user.rb:4:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:54:45 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 54ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2016-07-14 13:55:40 +0530
+
+ActionController::RoutingError (No route matches [GET] "/articles/new"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.4ms)
+
+
+Started GET "/users/signup" for 127.0.0.1 at 2016-07-14 13:56:33 +0530
+
+ActionController::RoutingError (No route matches [GET] "/users/signup"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/arsh/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-07-14 13:56:36 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 69ms (Views: 45.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:57:52 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 13:58:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:05:15 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "#signup&": expected "{", was "login{"
+
+"login" may only be used at the beginning of a compound selector.
+  (in /home/arsh/husna1/app/assets/stylesheets/welcome.css.scss:71)):
+    2: <html>
+    3: <head>
+    4:   <title>Husna</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:71
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1091713366271168869_47377879398080'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:06:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "#signup&": expected "{", was "login{"
+
+"login" may only be used at the beginning of a compound selector.
+  (in /home/arsh/husna1/app/assets/stylesheets/welcome.css.scss:71)):
+    2: <html>
+    3: <head>
+    4:   <title>Husna</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:71
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1091713366271168869_47377879398080'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:06:04 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "#signup&": expected "{", was "login{"
+
+"login" may only be used at the beginning of a compound selector.
+  (in /home/arsh/husna1/app/assets/stylesheets/welcome.css.scss:71)):
+    2: <html>
+    3: <head>
+    4:   <title>Husna</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:71
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1091713366271168869_47377879398080'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:08:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "#signup&": expected "{", was "login{"
+
+"login" may only be used at the beginning of a compound selector.
+  (in /home/arsh/husna1/app/assets/stylesheets/welcome.css.scss:71)):
+    2: <html>
+    3: <head>
+    4:   <title>Husna</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:71
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1091713366271168869_47377879398080'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.4ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:08:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Invalid CSS after "#signup&": expected "{", was "login{"
+
+"login" may only be used at the beginning of a compound selector.
+  (in /home/arsh/husna1/app/assets/stylesheets/welcome.css.scss:71)):
+    2: <html>
+    3: <head>
+    4:   <title>Husna</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:71
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1091713366271168869_47377879398080'
+
+
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/arsh/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:09:10 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:11:03 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-07-14 14:11:06 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:17:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/translate?punjabiAaala=Write+in+Punjabi+Here&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-14 14:17:07 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"Write in Punjabi Here", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.3ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "Write"]]
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "in"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "Punjabi"]]
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "Here"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/translate?punjabiAaala=Arsh%0D%0A&urduAaala=translation-not-found+translation-not-found+translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-14 14:17:19 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"Arsh\r\n", "urduAaala"=>"translation-not-found translation-not-found translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "Arsh"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/translate?punjabiAaala=Arsh%0D%0A&urduAaala=translation-not-found+translation-not-found+translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-14 14:17:24 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"Arsh\r\n", "urduAaala"=>"translation-not-found translation-not-found translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "Arsh"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:17:40 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-07-14 14:17:57 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:19:24 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:20:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:22:37 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:23:59 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:25:56 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:01 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:26:02 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:26:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:48 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:26:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:27:01 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:30:00 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:30:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:30 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:30:31 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:11 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:12 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:31:13 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:31:15 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:31:46 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:32:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:32:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:33:04 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:21 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:21 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:21 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:33:21 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:33:23 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:33:34 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:33:35 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:33:45 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:51:21 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:51:36 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:51:37 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-14 14:51:50 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-14 14:56:09 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:32:56 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 301ms (Views: 281.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:32:57 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:33:01 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-15 11:33:05 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (189.6ms)
+Completed 200 OK in 238ms (Views: 220.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-15 11:33:06 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-07-15 11:33:06 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:42:41 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 104ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:42:41 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:42:42 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:43:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:43:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:13 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:15 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:17 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:21 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:45:53 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:16 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:46:17 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:46:18 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:46:26 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 11:55:58 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:01:47 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:06:52 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:06:53 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:08:34 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:45 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:08:46 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:08:48 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:48 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:48 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:48 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:08:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:49 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:49 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:08:49 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:08:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:09:12 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:12 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:12 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:09:13 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:09:58 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:35 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:13:36 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:13:49 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:13:53 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:13:54 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:14:25 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:14:26 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:14:47 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
