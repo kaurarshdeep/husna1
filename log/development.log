@@ -34347,3 +34347,159 @@ Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 15:06:11 +053
 
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 15:06:11 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 16:45:07 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 63ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:45:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:07 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 16:45:13 +0530
+Processing by TranslationsController#index as HTML
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT "translations".* FROM "translations"
+  Rendered translations/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:45:13 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:13 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:45:26 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.3ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "ਉਸਤਾਦੀ"]]
+  Rendered welcome/translate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 9.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:45:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:26 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+&urduAaala=%D8%A7%D9%8F%D8%B3%D8%AA%D8%A7%D8%AF%DB%8C+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:45:43 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ ", "urduAaala"=>"اُستادی ", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "ਉਸਤਾਦੀ"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:45:43 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:43 +0530
+
+
+Started GET "/translate?punjabiAaala=.%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80++inder&urduAaala=%D8%A7%D9%8F%D8%B3%D8%AA%D8%A7%D8%AF%DB%8C+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:45:52 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>".ਉਸਤਾਦੀ  inder", "urduAaala"=>"اُستادی ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", ".ਉਸਤਾਦੀ"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:45:52 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:52 +0530
+
+
+Started GET "/translate?punjabiAaala=..%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+.inder+&urduAaala=translation-not-found+preet+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:45:58 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"..ਉਸਤਾਦੀ .inder ", "urduAaala"=>"translation-not-found preet ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "..ਉਸਤਾਦੀ"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", ".inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:45:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:45:58 +0530
+
+
+Started GET "/translate?punjabiAaala=...%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+..inder+&urduAaala=translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:46:00 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"...ਉਸਤਾਦੀ ..inder ", "urduAaala"=>"translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "...ਉਸਤਾਦੀ"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "..inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:46:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:46:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:46:00 +0530
+
+
+Started GET "/translate?punjabiAaala=....%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+...inder+&urduAaala=translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:46:01 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"....ਉਸਤਾਦੀ ...inder ", "urduAaala"=>"translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "....ਉਸਤਾਦੀ"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "...inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:46:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:46:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:46:01 +0530
+
+
+Started GET "/translate?punjabiAaala=.....%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+....inder+&urduAaala=translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 16:46:03 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>".....ਉਸਤਾਦੀ ....inder ", "urduAaala"=>"translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", ".....ਉਸਤਾਦੀ"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "....inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 16:46:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 16:46:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 16:46:03 +0530
