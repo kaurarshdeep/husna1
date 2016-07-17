@@ -33316,3 +33316,1034 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-15 12:15:09 +05
 
 
 Started GET "/assets/background.png" for 127.0.0.1 at 2016-07-15 12:15:09 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 12:05:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.7) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.7) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:00:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.7) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.7) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 529ms (Views: 510.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/translations.css?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/translations.js?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-07-17 14:05:25 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:05:44 +0530
+Processing by TranslationsController#index as HTML
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT "translations".* FROM "translations"[0m
+  Rendered translations/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-17 14:05:47 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (117.6ms)
+  Rendered translations/new.html.erb within layouts/application (197.9ms)
+Completed 200 OK in 252ms (Views: 246.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/translations" for 127.0.0.1 at 2016-07-17 14:06:13 +0530
+Processing by TranslationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fBhUs6g5lXsfFgmLGHCt37z8V/EcXlTBPWFrICWi6U7qO27xkzsnWDLq2iWuQHNLXCUFRSXFtsttn9QJ2gnXRA==", "translation"=>{"punjabi"=>"ਉਸਤਾਦੀ", "urdu"=>"اُستادی"}, "commit"=>"Create Translation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "translations" ("punjabi", "urdu", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["punjabi", "ਉਸਤਾਦੀ"], ["urdu", "اُستادی"], ["created_at", "2016-07-17 08:36:13.848352"], ["updated_at", "2016-07-17 08:36:13.848352"]]
+  [1m[35m (49.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/translations/1
+Completed 302 Found in 79ms (ActiveRecord: 49.4ms)
+
+
+Started GET "/translations/1" for 127.0.0.1 at 2016-07-17 14:06:13 +0530
+Processing by TranslationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered translations/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 58ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:06:24 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:06:30 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `length' for nil:NilClass):
+  app/controllers/welcome_controller.rb:12:in `translate'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.0ms)
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:07:02 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (bad value for range):
+  app/controllers/welcome_controller.rb:24:in `translate'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:07:38 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+&urduAaala=&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:07:42 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ ", "urduAaala"=>"", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80+&urduAaala=&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:18:28 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ ", "urduAaala"=>"", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:18:28 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:18:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:36:53 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:36:53 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:36:53 +0530
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:36:53 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:37:01 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:37:01 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:01 +0530
+
+
+Started GET "/translate?punjabiAaala=kjkjk&urduAaala=&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:37:19 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"kjkjk", "urduAaala"=>"", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.3ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "kjkjk"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:37:19 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:19 +0530
+
+
+Started GET "/translate?punjabiAaala=inder&urduAaala=translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:37:25 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"inder", "urduAaala"=>"translation-not-found ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:37:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:25 +0530
+
+
+Started GET "/translatations" for 127.0.0.1 at 2016-07-17 14:37:37 +0530
+
+ActionController::RoutingError (No route matches [GET] "/translatations"):
+  actionpack (4.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/inder/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.0ms)
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:37:46 +0530
+Processing by TranslationsController#index as HTML
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT "translations".* FROM "translations"
+  Rendered translations/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:37:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:37:46 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80n&urduAaala=translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:38:11 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀn", "urduAaala"=>"translation-not-found ", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", ""]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "n"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:38:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:38:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:38:11 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:38:26 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:38:27 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:38:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:38:27 +0530
+
+
+Started GET "/translate" for 127.0.0.1 at 2016-07-17 14:38:58 +0530
+Processing by WelcomeController#translate as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `split' for nil:NilClass):
+  app/controllers/welcome_controller.rb:9:in `translate'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:39:07 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:39:07 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:39:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:39:07 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:39:17 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:39:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:39:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:39:17 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:40:54 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:40:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:40:54 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:40:54 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:40:58 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:40:58 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:40:58 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:40:58 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:41:15 +0530
+Processing by TranslationsController#index as HTML
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT "translations".* FROM "translations"[0m
+  Rendered translations/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:41:15 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:41:15 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:41:15 +0530
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-17 14:41:18 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (1.8ms)
+  Rendered translations/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/translations" for 127.0.0.1 at 2016-07-17 14:41:34 +0530
+Processing by TranslationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RVTkWvDHlMzO80c9xCJcboEYAyqobICdFRIIhH5RlLbTd94Yy8Um7+MPlJNyEoL6YcFRnpH3YpdF7LetgfqqvA==", "translation"=>{"punjabi"=>"inder", "urdu"=>"preet"}, "commit"=>"Create Translation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "translations" ("punjabi", "urdu", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["punjabi", "inder"], ["urdu", "preet"], ["created_at", "2016-07-17 09:11:34.618910"], ["updated_at", "2016-07-17 09:11:34.618910"]]
+  [1m[35m (92.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/translations/2
+Completed 302 Found in 97ms (ActiveRecord: 92.5ms)
+
+
+Started GET "/translations/2" for 127.0.0.1 at 2016-07-17 14:41:34 +0530
+Processing by TranslationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered translations/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:41:34 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:41:34 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:41:34 +0530
+
+
+Started GET "/translate?punjabiAaala=inder&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:41:49 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"inder", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:41:49 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:41:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:41:49 +0530
+
+
+Started GET "/translate?punjabiAaala=inder&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:42:11 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"inder", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:42:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:11 +0530
+
+
+Started GET "/translate?punjabiAaala=+inder&urduAaala=preet+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:42:15 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>" inder", "urduAaala"=>"preet ", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", ""]]
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:42:16 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:16 +0530
+
+
+Started GET "/translate?punjabiAaala=++inder&urduAaala=translation-not-found+preet+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:42:20 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"  inder", "urduAaala"=>"translation-not-found preet ", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", ""]]
+  [1m[36mTranslation Load (0.3ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:42:20 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:20 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:42:26 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:42:26 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:26 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:26 +0530
+
+
+Started GET "/translate?punjabiAaala=inder&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:42:33 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"inder", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:42:33 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:33 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:33 +0530
+
+
+Started GET "/translate?punjabiAaala=inder&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:42:48 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"inder", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "inder"]]
+  Rendered welcome/translate.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:42:48 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:42:48 +0530
+
+
+Started GET "/translate" for 127.0.0.1 at 2016-07-17 14:43:32 +0530
+Processing by WelcomeController#translate as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `split' for nil:NilClass):
+  app/controllers/welcome_controller.rb:9:in `translate'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/translate" for 127.0.0.1 at 2016-07-17 14:43:35 +0530
+Processing by WelcomeController#translate as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `split' for nil:NilClass):
+  app/controllers/welcome_controller.rb:9:in `translate'
+
+
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/inder/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:43:38 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:43:38 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:43:38 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:43:38 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:44:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:44:21 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:21 +0530
+
+
+Started GET "/translate?punjabiAaala=this+is+it&urduAaala=Expect+Urdu+Here&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:44:30 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"this is it", "urduAaala"=>"Expect Urdu Here", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "this"]]
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "is"]]
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "it"]]
+  Rendered welcome/translate.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 9.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:44:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:30 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:30 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=translation-not-found+translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:44:37 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"translation-not-found translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:44:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:37 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:37 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=translation-not-found+translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:44:55 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"translation-not-found translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:44:55 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:55 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:44:55 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80&urduAaala=translation-not-found+translation-not-found+translation-not-found+&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:45:17 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ", "urduAaala"=>"translation-not-found translation-not-found translation-not-found ", "translateKar"=>"Translate"}
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:45:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:45:17 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:45:17 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80%0D%0A&urduAaala=&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:48:06 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ\r\n", "urduAaala"=>"", "translateKar"=>"Translate"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1[0m  [["punjabi", "ਉਸਤਾਦੀ"]]
+  Rendered welcome/translate.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 7.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:48:06 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:48:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:48:06 +0530
+
+
+Started GET "/translate?punjabiAaala=%E0%A8%89%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%A6%E0%A9%80%0D%0A&urduAaala=&translateKar=Translate" for 127.0.0.1 at 2016-07-17 14:49:03 +0530
+Processing by WelcomeController#translate as HTML
+  Parameters: {"punjabiAaala"=>"ਉਸਤਾਦੀ\r\n", "urduAaala"=>"", "translateKar"=>"Translate"}
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."punjabi" = ?  ORDER BY "translations"."id" ASC LIMIT 1  [["punjabi", "ਉਸਤਾਦੀ"]]
+  Rendered welcome/translate.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:49:03 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:49:03 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:49:03 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:52:11 +0530
+Processing by TranslationsController#index as HTML
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT "translations".* FROM "translations"[0m
+  Rendered translations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:52:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:52:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:52:11 +0530
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-17 14:52:14 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (1.9ms)
+  Rendered translations/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/translations" for 127.0.0.1 at 2016-07-17 14:52:25 +0530
+Processing by TranslationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YUqTyLQ92QOKfHSye26DW4UiI4Vnv5xs1DNDO0dRug/3aamKjz9rIKeApxzNXl3PZftxMV4kfmaEzfwSuPqEBQ==", "translation"=>{"punjabi"=>"ਉਸਤਰਾ", "urdu"=>"اُستُرہ"}, "commit"=>"Create Translation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "translations" ("punjabi", "urdu", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["punjabi", "ਉਸਤਰਾ"], ["urdu", "اُستُرہ"], ["created_at", "2016-07-17 09:22:25.008298"], ["updated_at", "2016-07-17 09:22:25.008298"]]
+  [1m[35m (79.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/translations/3
+Completed 302 Found in 84ms (ActiveRecord: 80.3ms)
+
+
+Started GET "/translations/3" for 127.0.0.1 at 2016-07-17 14:52:25 +0530
+Processing by TranslationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered translations/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:52:25 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:52:25 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:52:25 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:52:27 +0530
+Processing by TranslationsController#index as HTML
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT "translations".* FROM "translations"
+  Rendered translations/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-17 14:52:28 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (1.8ms)
+  Rendered translations/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/translations" for 127.0.0.1 at 2016-07-17 14:53:00 +0530
+Processing by TranslationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8omPZ29jL9Qynq30r+ytKQcIY+XV1XsEou70nM1ccq9kqrUlVGGd9x9ifloZ3HO959ExUexOmQ7yEEu1MvdMpQ==", "translation"=>{"punjabi"=>"ਉਸਤਾਦ", "urdu"=>"اُستاد"}, "commit"=>"Create Translation"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "translations" ("punjabi", "urdu", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["punjabi", "ਉਸਤਾਦ"], ["urdu", "اُستاد"], ["created_at", "2016-07-17 09:23:00.436421"], ["updated_at", "2016-07-17 09:23:00.436421"]]
+  [1m[36m (91.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/translations/4
+Completed 302 Found in 94ms (ActiveRecord: 91.3ms)
+
+
+Started GET "/translations/4" for 127.0.0.1 at 2016-07-17 14:53:00 +0530
+Processing by TranslationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered translations/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:53:00 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:53:00 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:53:00 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:53:02 +0530
+Processing by TranslationsController#index as HTML
+  [1m[36mTranslation Load (0.2ms)[0m  [1mSELECT "translations".* FROM "translations"[0m
+  Rendered translations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-17 14:53:08 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (2.2ms)
+  Rendered translations/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/translations" for 127.0.0.1 at 2016-07-17 14:53:18 +0530
+Processing by TranslationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zLDCgXwodxWQhbEm5HL6MI2lO4Sia1XO1dRoPsitlKRak/jDRyrFNr15YohSQiSkbXxpMJvwt8SFKtcXNwaqrg==", "translation"=>{"punjabi"=>"ਉਕਾਬ", "urdu"=>"عُقاب"}, "commit"=>"Create Translation"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "translations" ("punjabi", "urdu", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["punjabi", "ਉਕਾਬ"], ["urdu", "عُقاب"], ["created_at", "2016-07-17 09:23:18.703099"], ["updated_at", "2016-07-17 09:23:18.703099"]]
+  [1m[35m (94.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/translations/5
+Completed 302 Found in 97ms (ActiveRecord: 94.4ms)
+
+
+Started GET "/translations/5" for 127.0.0.1 at 2016-07-17 14:53:18 +0530
+Processing by TranslationsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTranslation Load (0.1ms)[0m  [1mSELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered translations/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:53:18 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:53:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:53:18 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:53:22 +0530
+Processing by TranslationsController#index as HTML
+  [1m[35mTranslation Load (0.2ms)[0m  SELECT "translations".* FROM "translations"
+  Rendered translations/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/translations/new" for 127.0.0.1 at 2016-07-17 14:53:26 +0530
+Processing by TranslationsController#new as HTML
+  Rendered translations/_form.html.erb (1.9ms)
+  Rendered translations/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/translations" for 127.0.0.1 at 2016-07-17 14:53:44 +0530
+Processing by TranslationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CN9Id4BKb7LGL3osWqUSl6YsYwBnBfbeHD8V6qOSPk+e/HI1u0jdkevTqYLslcwDRvUxtF6eFNRMwarDXDkARQ==", "translation"=>{"punjabi"=>"ਅਸਰ", "urdu"=>"اثر"}, "commit"=>"Create Translation"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "translations" ("punjabi", "urdu", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["punjabi", "ਅਸਰ"], ["urdu", "اثر"], ["created_at", "2016-07-17 09:23:44.763997"], ["updated_at", "2016-07-17 09:23:44.763997"]]
+  [1m[36m (83.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/translations/6
+Completed 302 Found in 87ms (ActiveRecord: 83.4ms)
+
+
+Started GET "/translations/6" for 127.0.0.1 at 2016-07-17 14:53:44 +0530
+Processing by TranslationsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mTranslation Load (0.1ms)[0m  SELECT  "translations".* FROM "translations" WHERE "translations"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered translations/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:53:44 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:53:44 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:53:44 +0530
+
+
+Started GET "/translations" for 127.0.0.1 at 2016-07-17 14:53:46 +0530
+Processing by TranslationsController#index as HTML
+  [1m[36mTranslation Load (0.3ms)[0m  [1mSELECT "translations".* FROM "translations"[0m
+  Rendered translations/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 14:54:05 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 14:54:05 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 14:54:05 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 14:54:05 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-17 15:06:11 +0530
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2016-07-17 15:06:11 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-07-17 15:06:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-07-17 15:06:11 +0530

@@ -6,9 +6,11 @@ skip_before_action :verify_authenticity_token
 
   def translate
 	@punjabiSentence = params[:punjabiAaala]
-	@punjabiWords = @punjabiSentence.split(/\W+/)
+	@punjabiWords = @punjabiSentence.strip.split(" ")
 	@noOfWords = @punjabiWords.length - 1
+			
 	@urduWords = []
+        @urduLetters = []
 
 	for i in 0..@noOfWords
 		@urduObj = Translation.where(punjabi: @punjabiWords[i]).first
@@ -17,7 +19,12 @@ skip_before_action :verify_authenticity_token
 		else 
 		  @urduWords << "translation-not-found"
 		end
-   	end		
+   	end 
+			#for j in 0..@punjabiLength
+			##	@urduobj = Translation.where(punjabi: @noOfLetters[j]).first.inspect
+			#	@urduLetters << @urduobj.urdu
+			#end			
+				
   end
 
 end
