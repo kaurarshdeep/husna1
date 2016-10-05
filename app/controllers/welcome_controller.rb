@@ -10,7 +10,7 @@ skip_before_action :verify_authenticity_token
 	@noOfWords = @punjabiWords.length - 1
 			
 	@urduWords = []
-        @urduLetters = []
+       # @urduLetters = []
 
 	for i in 0..@noOfWords
 		@urduObj = Translation.where(punjabi: @punjabiWords[i]).first

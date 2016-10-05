@@ -9,7 +9,7 @@
                 <form action="/translate" method="get">
 			
 			<div class="punjabi-area area"> 
-				<textarea class="psearch" name="punjabiAaala" id="first"><% @punjabiWords.each do |word| %>.<%= word %> <% end %></textarea> 
+				<textarea class="psearch" name="punjabiAaala" id="first"><% @punjabiWords.each do |word| %><%= word %> <% end %></textarea> 
 			</div>
 			<div class="urdu-area area">
 	                	<textarea class="usearch" dir="rtl" name="urduAaala" id="second"><% @urduWords.each do |word| %><%= word %> <% end %></textarea>
