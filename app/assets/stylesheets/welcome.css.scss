@@ -4,7 +4,7 @@ body, html{
       height:100%;
 }
 
-* {
+*{
      margin:0;
      padding:0;
 }
@@ -56,15 +56,17 @@ header h1 {
 }
 .btn-area {
      margin-left:60%;
-     margin-bottom:40px;
+     margin-bottom:90px;
      width:10%;
-     position:fixed;
      bottom:30px;
 }
 .submit {
    background: #428BCA;
    color: #fff;
-   margin:auto;
+   margin-left:-180px;
+   margin-bottom:90px;
+   margin-top:-270px;
+   position:fixed;
    display:block;
    width:100px;
    height:100px;
@@ -75,8 +77,8 @@ header h1 {
 }
 
 .submit:hover {
- /*background: #3071A9*/
- box-shadow: inset 0 0 0 100px #3071A9;
+ background: #3071A9
+ 
 
 }
 a{
@@ -87,10 +89,25 @@ a{
    margin:auto;
    margin-top:-10px;
 }
-.signupandlogin
-{
-display:inline-block;
-float:right;
-position:absolute;
+.signupandlogin{
+   display:inline-block;
+   float:right;
+   position:absolute;
 
 }
+#keyboard{
+    margin-top:-20px;
+    margin-left:25%;
+    display:inline-block;
+    border:3px solid grey;
+}
+button{
+     height:32px;
+     width:35px;
+     background-color:pink;
+
+}
+.double{
+     width:93.5px;
+}
+   
